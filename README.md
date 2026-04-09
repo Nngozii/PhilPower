@@ -6,11 +6,11 @@ A cloud-based **Digital Ledger and Inventory Management System** designed to dec
 
 
 ## The Problem
-This veteran business owner has become "hostages" to their own success. Without a reliable system:
-* **The Pricing Bottleneck:** Owners are called constantly to provide "last prices," as customers don't trust workers.
+This veteran business owner has become "hostage" to his own success. Without a reliable system:
+* **The Pricing Bottleneck:** He is called constantly to provide "last prices," as customers don't trust workers.
 * **The Trust Gap:** Workers sell items "off-record" or use personal bank accounts for transfers, leading to "Ghost Sales."
 * **Zero Visibility:** Lack of sales records makes it impossible to calculate daily profit or identify fast-moving vs. slow-moving stock.
-* **Inventory Shrinkage:** In cluttered shops, items vanish without a trace because there is no exit log.
+* **Inventory Shrinkage:** In this cluttered shop, items vanish without a trace because there is no exit log.
 
 ## The Solution
 This PWA (Progressive Web App) acts as a **"Digital Manager"** that enforces transparency through:
