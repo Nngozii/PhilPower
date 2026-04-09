@@ -15,16 +15,16 @@ This veteran business owner has become "hostage" to his own success. Without a r
 ## The Solution
 This PWA (Progressive Web App) acts as a **"Digital Manager"** that enforces transparency through:
 
-* **Pre-Set Pricing Engine:** Defines "Retail" and "Floor" prices to eliminate constant phone calls to the owner.
+* **Pre-Set Pricing Engine:** Defines "Retail" and "Floor" prices to eliminate constant phone calls to the veteran.
 * **Transaction Lock:** Links every inventory exit to a unique transaction ID, preventing unrecorded sales.
 * **Payment Verification:** Displays official account details to customers to prevent "Personal Transfer" fraud.
-* **Real-Time Auditing:** Provides the owner with a live dashboard of sales, expected cash-at-hand, and bank transfer reconciliations.
+* **Real-Time Auditing:** Provides the veteran with a live dashboard of sales, expected cash-at-hand, and bank transfer reconciliations.
 * **Stock Roulette:** Randomly prompts for stock counts of specific items to ensure physical inventory matches digital records.
 
 ## Tech Stack 
-* **Frontend:** React / Tailwind CSS (PWA for mobile-first "local" use)
+* **Frontend:** React / Tailwind CSS 
 * **Backend:** Node.js / Express
-* **Database:** MongoDB (for flexible inventory schemas)
+* **Database:** PostgreSQL
 * **Authentication:** JWT-based roles (Owner vs. Worker)
 
 ## Key Features
