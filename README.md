@@ -4,7 +4,6 @@ This as an inventory and sales management system for PhilPower.
 
 A cloud-based **Digital Ledger and Inventory Management System** designed to decouple a business owner’s physical presence from daily operations. Built specifically for high-traffic, low-trust retail environments (like spare parts shops) where traditional bookkeeping has failed.
 
-
 ## The Problem
 This veteran business owner has become "hostage" to his own success. Without a reliable system:
 * **The Pricing Bottleneck:** He is called constantly to provide "last prices," as customers don't trust workers.
@@ -28,10 +27,10 @@ This PWA (Progressive Web App) acts as a **"Digital Manager"** that enforces tra
 * **Authentication:** JWT-based roles (Owner vs. Worker)
 
 ## Key Features
-- [ ] **Searchable Inventory:** Quick-find for thousands of small parts using local nicknames.
-- [ ] **Daily Ledger:** Automated end-of-day reports showing total revenue and payment breakdown.
-- [ ] **Remote Oversight:** Owner can update prices and view sales from anywhere.
-- [ ] **Return Management:** Verified returns based on transaction history only.
+**Searchable Inventory:** Quick-find for thousands of small parts using local nicknames.
+**Daily Ledger:** Automated end-of-day reports showing total revenue and payment breakdown.
+**Remote Oversight:** Owner can update prices and view sales from anywhere.
+**Return Management:** Verified returns based on transaction history only.
 
 ---
 *Developed as a solution for PhilPower high-turnover retail shops in Ikirun, Osun State, Nigeria.*
