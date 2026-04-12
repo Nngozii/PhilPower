@@ -13,7 +13,6 @@ This veteran business owner has become "hostage" to his own success. Without a r
 
 ## The Solution
 This PWA (Progressive Web App) acts as a **"Digital Manager"** that enforces transparency through:
-
 * **Pre-Set Pricing Engine:** Defines "Retail" and "Floor" prices to eliminate constant phone calls to the veteran.
 * **Transaction Lock:** Links every inventory exit to a unique transaction ID, preventing unrecorded sales.
 * **Payment Verification:** Displays official account details to customers to prevent "Personal Transfer" fraud.
