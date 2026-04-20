@@ -9,16 +9,16 @@ const Home = () => {
 
       <main className="min-h-screen items-center justify-center p-8">
         <div className="text-center space-y-8">
-          <h1 className="text-5xl font-semibold tracking-tight text-gray-900">
+          <h1 className="text-5xl font-semibold tracking-tight text-gray-900 pt-5">
             PhilPower.
           </h1>
-          <p className="text-lg text-gray-500">
+          <p className="text-lg text-gray-500 pt-5">
             Welcome to PhilPower. <br /> Dealer in all kinds of engine and
             engine parts.
           </p>
 
           {/* Login portals */}
-          <div className="grid md:grid-cols-2 gap-15 max-w-2xl mx-auto mt-25">
+          <div className="grid md:grid-cols-2 gap-15 max-w-2xl mx-auto mt-23">
 
             {/* Owner portal */}
             <button className="group p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all text-left flex flex-col items-start">
