@@ -1,7 +1,6 @@
 # PhilPower
 
 This as an inventory and sales management system for PhilPower.
-
 A cloud-based **Digital Ledger and Inventory Management System** designed to decouple a business owner’s physical presence from daily operations. Built specifically for high-traffic, low-trust retail environments (like spare parts shops) where traditional bookkeeping has failed.
 
 ## The Problem
