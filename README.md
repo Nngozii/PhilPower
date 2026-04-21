@@ -32,4 +32,4 @@ This PWA (Progressive Web App) acts as a **"Digital Manager"** that enforces tra
 * **Return Management:** Verified returns based on transaction history only.
 
 ---
-*Developed as a solution for PhilPower high-turnover retail shops in Ikirun, Osun State, Nigeria.*
+*Developed as a solution for PhilPower high-turnover retail shop in Ikirun, Osun State, Nigeria.*
