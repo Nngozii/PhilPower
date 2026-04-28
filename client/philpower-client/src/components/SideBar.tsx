@@ -8,15 +8,27 @@ import {
   LogOut,
   ClipboardList,
   Trophy,
-  Icon,
 } from "lucide-react";
 
-const SideBar = () => {
+interface SideBarProps {
+  role: "owner" | "worker";
+  onLogout: () => void;
+}
+
+const SideBar = ({ role, onLogout }: SideBarProps) => {
   const MenuItems = [
+    ...(role === "owner"
+      ? [{ id: "dashboard", label: "Dashboard", icon: LayoutDashboard }]
+      : []),
     { id: "items", label: "Items", icon: Package },
     { id: "sales-log", label: "Sales Log", icon: ShoppingCart },
     { id: "sales-history", label: "Sales History", icon: ClipboardList },
-    { id: "leaderboard", label: "LeaderBoard", icon: Trophy },
+    ...(role === "worker"
+      ? [{ id: "leaderboard", label: "LeaderBoard", icon: Trophy }]
+      : []),
+    ...(role === "owner"
+      ? [{ id: "report", label: "Reports", icon: BarChart3 }]
+      : []),
     { id: "settings", label: "Settings", icon: Settings },
   ];
   return (
@@ -27,7 +39,7 @@ const SideBar = () => {
         </h1>
 
         <div className="flex-1 m-1 p-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-600">
-          <p className="text-center">Worker Portal</p>
+          <p className="text-center">{role} Portal</p>
         </div>
       </div>
 
@@ -50,10 +62,10 @@ const SideBar = () => {
           );
         })}
 
-        <div className="p-4 border-t border-gray-200 mt-30">
+        <div className="p-4 border-t border-gray-200 mt-23">
           <button
             className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 w-full transition-colors"
-            onClick={() => console.log("log out")}
+            onClick={() => onLogout}
           >
             <LogOut className="w-5 h-5" />
             Sign Out
