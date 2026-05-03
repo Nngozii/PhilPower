@@ -2,6 +2,7 @@ import { Shield, ArrowRight, User } from "lucide-react";
 
 const Home = () => {
   return (
+
     <>
       <header className="px-8 py-5 bg-white">
         <h1 className="text-3xl font-semibold text-gray-900">PP.</h1>
@@ -36,6 +37,7 @@ const Home = () => {
                 system settings.
               </p>
             </button>
+
 
             {/* Workers portal */}
              <button className="group p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all text-left flex flex-col items-start">
