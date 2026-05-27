@@ -4,9 +4,9 @@ import Home from "./components/Home"
 import SideBar from "./components/SideBar"
 
 const App = () => {
-  const [role, setRole] = useState<'owner' | 'worker' | null>(null)
+  const [role, setRole] = useState<'Owner' | 'Worker' | null>(null)
 
-  const handleLogin = (selectedRole: 'owner' | 'worker') => {
+  const handleLogin = (selectedRole: 'Owner' | 'Worker') => {
     setRole(selectedRole)
     console.log(selectedRole)
   }
@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     
-    <SideBar role="worker" onLogout={handleLogout} />
+    <SideBar role={role} onLogout={handleLogout} />
   )
 }
 

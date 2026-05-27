@@ -11,22 +11,22 @@ import {
 } from "lucide-react";
 
 interface SideBarProps {
-  role: "owner" | "worker";
+  role: "Owner" | "Worker";
   onLogout: () => void;
 }
 
 const SideBar = ({ role, onLogout }: SideBarProps) => {
   const MenuItems = [
-    ...(role === "owner"
+    ...(role === "Owner"
       ? [{ id: "dashboard", label: "Dashboard", icon: LayoutDashboard }]
       : []),
     { id: "items", label: "Items", icon: Package },
     { id: "sales-log", label: "Sales Log", icon: ShoppingCart },
     { id: "sales-history", label: "Sales History", icon: ClipboardList },
-    ...(role === "worker"
+    ...(role === "Worker"
       ? [{ id: "leaderboard", label: "LeaderBoard", icon: Trophy }]
       : []),
-    ...(role === "owner"
+    ...(role === "Owner"
       ? [{ id: "report", label: "Reports", icon: BarChart3 }]
       : []),
     { id: "settings", label: "Settings", icon: Settings },
@@ -39,7 +39,7 @@ const SideBar = ({ role, onLogout }: SideBarProps) => {
         </h1>
 
         <div className="flex-1 m-1 p-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-600">
-          <p className="text-center">{role} Portal</p>
+          <p className="text-center"> {role} Portal</p>
         </div>
       </div>
 

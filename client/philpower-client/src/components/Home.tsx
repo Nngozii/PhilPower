@@ -1,7 +1,7 @@
 import { Shield, ArrowRight, User } from "lucide-react";
 
 interface HomeProps {
-  onLogin: (role: "owner" | "worker") => void;
+  onLogin: (role: "Owner" | "Worker") => void;
 }
 
 const Home = ({ onLogin }: HomeProps) => {
@@ -27,7 +27,7 @@ const Home = ({ onLogin }: HomeProps) => {
             <button
               className="group p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all text-left flex flex-col items-start"
               onClick={() => {
-                onLogin("owner");
+                onLogin("Owner");
               }}
             >
               <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
@@ -49,7 +49,7 @@ const Home = ({ onLogin }: HomeProps) => {
             <button
               className="group p-8 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all text-left flex flex-col items-start"
               onClick={() => {
-                onLogin("worker");
+                onLogin("Worker");
               }}
             >
               <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
