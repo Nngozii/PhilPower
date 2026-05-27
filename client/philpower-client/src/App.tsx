@@ -11,6 +11,10 @@ const App = () => {
     console.log(selectedRole)
   }
 
+  const handleLogout = () => {
+    setRole(null)
+  }
+
   if (!role){
     return (
       <Home onLogin={handleLogin} />
@@ -19,7 +23,7 @@ const App = () => {
 
   return (
     
-    <SideBar role="worker" onLogout={() => console.log("logout")} />
+    <SideBar role="worker" onLogout={handleLogout} />
   )
 }
 
