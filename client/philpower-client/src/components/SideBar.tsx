@@ -12,10 +12,12 @@ import {
 
 interface SideBarProps {
   role: "Owner" | "Worker";
+  activeTab:string ;
+  setActiveTab: (tab: string) => void;
   onLogout: () => void;
 }
 
-const SideBar = ({ role, onLogout }: SideBarProps) => {
+const SideBar = ({ role, activeTab, setActiveTab, onLogout }: SideBarProps) => {
   const MenuItems = [
     ...(role === "Owner"
       ? [{ id: "dashboard", label: "Dashboard", icon: LayoutDashboard }]
@@ -50,11 +52,12 @@ const SideBar = ({ role, onLogout }: SideBarProps) => {
 
         {MenuItems.map((items) => {
           const Icon = items.icon;
+          activeTab === items.id
           return (
             <button
               key={items.id}
               className="flex items-center gap-3 px-3 py-2.5 text-gray-600 rounded-lg text-base font-medium transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 w-full transition-colors"
-              onClick={() => console.log(items.label)}
+              onClick={() => setActiveTab(items.id)}
             >
               <Icon className="text-gray-400 w-6 h-6" />
               {items.label}
