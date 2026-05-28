@@ -12,7 +12,7 @@ import {
 
 interface SideBarProps {
   role: "Owner" | "Worker";
-  activeTab:string ;
+  activeTab: string;
   setActiveTab: (tab: string) => void;
   onLogout: () => void;
 }
@@ -49,22 +49,32 @@ const SideBar = ({ role, activeTab, setActiveTab, onLogout }: SideBarProps) => {
         <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-3">
           MENU
         </div>
-
         {MenuItems.map((items) => {
           const Icon = items.icon;
-          activeTab === items.id
+          const isActive = activeTab === items.id;
           return (
             <button
               key={items.id}
-              className="flex items-center gap-3 px-3 py-2.5 text-gray-600 rounded-lg text-base font-medium transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 w-full transition-colors"
+              className={cn(
+                "flex items-center gap-3 px-3 py-2.5 text-gray-600 rounded-lg text-base font-medium transition-all duration-200",
+                isActive
+                  ? "bg-gray-900 text-white shadow-md shadow-gray-900/10"
+                  : "hover:bg-gray-100 hover:text-gray-900 w-full transition-colors",
+              )}
               onClick={() => setActiveTab(items.id)}
             >
-              <Icon className="text-gray-400 w-6 h-6" />
+              <Icon
+                className={cn(
+                  "w-6 h-6",
+                  isActive ? "text-gray-300" : "text-gray-400",
+                )}
+              />
               {items.label}
             </button>
           );
         })}
 
+        {/* Sign out*/}
         <div className="p-4 border-t border-gray-200 mt-23">
           <button
             className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 w-full transition-colors"
