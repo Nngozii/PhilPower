@@ -31,9 +31,7 @@ const App = () => {
       <SideBar
         role={role}
         activeTab={activeTab}
-        setActiveTab={() => {
-          console.log(activeTab);
-        }}
+        setActiveTab={setActiveTab}
         onLogout={handleLogout}
       />
 
