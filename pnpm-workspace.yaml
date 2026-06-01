@@ -1,0 +1,6 @@
+packages:
+  - "client/philpower-client"
+  - "server"
+  - "packages/*"
+allowBuilds:
+  msw: true
